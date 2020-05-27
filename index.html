@@ -24,7 +24,11 @@ $(document).ready(function() {
       notEmpty();
    }
    else
-   {
+   {    if (person=="")
+    {
+        person="a Ti"
+
+    }
 
     document.getElementById("marco").innerHTML =  "Te Quiero " +" "+ person +" , " + "Okay :D";
    }
