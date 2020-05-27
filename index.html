@@ -3,45 +3,58 @@
 <head>
 <meta charset="utf-8">
 <title>Mensaje :D</title>
+<style>
+div.a {
+  text-align: center;
+}
+</style>
+</style>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script>
 
-var arr = [ 1, 2, 3, 4, 5 ,6,7,8,9,10];
+/* var arr = [ 1, 2, 3, 4, 5 ,6,7,8,9,10]; */
+
 
 $(document).ready(function() {
-
-
-
-
+    var person = prompt("¿Ingrese Su Nombre :D");
+   /*  person = string.concat("Te Quiero"," ",persona); */
+  /*   alert("probando okay " + person); */
+    document.getElementById("marco").innerHTML =  "Te Quiero " + person;
 });
 
-$.each(arr, function( index, value ) {
+
+/* $.each(arr2, function( index, value ) {
          
          var valeee=parseInt(value);
          var indice=parseInt(index);
      
          alert(indice);
-                if(indice==9)
+                if(indice==8)
                 {
                     
-                    window.close();
-                    /* return false; */
+                
+                    return false;
                     
                 }
                 else
                 {
-                    alert("marco");
+                    alert(value);
                     return true;
                 }
 
 
-       });
+       }); */
 
 
 </script>
 </head>
 <body>
 
+    <div class="a">
+        <h2><img src="https://laverdadnoticias.com/__export/1581614326589/sites/laverdad/img/2020/02/13/emoji_corazon_latiendo.png_478486366.png" width="500" height="300" class="responsive"></h2>
+        <h1 id="marco" style="font-size:300%;"></h1>
+       <!--  <p id="marco"> marocmarocmarocmaroc</p> -->
+    </div>
 
 </body>
 </html>
