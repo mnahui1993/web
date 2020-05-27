@@ -19,9 +19,38 @@ $(document).ready(function() {
     var person = prompt("¿Ingrese Su Nombre :D");
    /*  person = string.concat("Te Quiero"," ",persona); */
   /*   alert("probando okay " + person); */
-    document.getElementById("marco").innerHTML =  "Te Quiero " + person;
+   if (person==null)
+   {
+      notEmpty();
+   }
+   else
+   {
+
+    document.getElementById("marco").innerHTML =  "Te Quiero " +" "+ person +" , " + "Okay :D";
+   }
+    
 });
 
+/* function isNullo(msg)
+{
+ 
+        var person = prompt("¿Ingrese Su Nombre ");
+        document.getElementById("marco").innerHTML =  "Te Quiero " +" "+ person +"  " + "Okay :D";
+   
+
+
+} */
+
+function notEmpty(msg)
+{
+    var person = prompt("¿Ingrese Su Nombre :D");
+    if (person==null)
+    {
+        person="a Ti"
+
+    }
+    document.getElementById("marco").innerHTML =  "Te Quiero " +" "+ person +" , " + "Okay :D";
+}
 
 /* $.each(arr2, function( index, value ) {
          
