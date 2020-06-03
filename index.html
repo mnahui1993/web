@@ -15,10 +15,8 @@ div.a {
 /* var arr = [ 1, 2, 3, 4, 5 ,6,7,8,9,10]; */
 
 
-$(document).ready(function() {
+/* $(document).ready(function() {
     var person = prompt("¿Ingrese Su Nombre :D");
-   /*  person = string.concat("Te Quiero"," ",persona); */
-  /*   alert("probando okay " + person); */
    if (person==null)
    {
       notEmpty();
@@ -33,7 +31,7 @@ $(document).ready(function() {
     document.getElementById("marco").innerHTML =  "Te Quiero " +" "+ person +" , " + "Okay :D";
    }
     
-});
+}); */
 
 /* function isNullo(msg)
 {
@@ -44,6 +42,27 @@ $(document).ready(function() {
 
 
 } */
+
+var cantidad = prompt("¿Del 1 al 5... Cuanto crees q te quiero?");
+var newcantidad = parseInt(cantidad) + 5;
+
+if (  newcantidad>0 || newcantidad<10)
+{
+
+ for (i = 0; i <=  newcantidad ; i++) {
+   alert("Te Quiero ♥ ");
+
+   if (i==newcantidad)
+   {
+    alert("Te Voy ganando ♥ ");
+   }
+
+}
+
+}
+
+
+
 
 function notEmpty(msg)
 {
@@ -56,38 +75,17 @@ function notEmpty(msg)
     document.getElementById("marco").innerHTML =  "Te Quiero " +" "+ person +" , " + "Okay :D";
 }
 
-/* $.each(arr2, function( index, value ) {
-         
-         var valeee=parseInt(value);
-         var indice=parseInt(index);
-     
-         alert(indice);
-                if(indice==8)
-                {
-                    
-                
-                    return false;
-                    
-                }
-                else
-                {
-                    alert(value);
-                    return true;
-                }
-
-
-       }); */
 
 
 </script>
 </head>
 <body>
-
+<!-- 
     <div class="a">
         <h2><img src="https://laverdadnoticias.com/__export/1581614326589/sites/laverdad/img/2020/02/13/emoji_corazon_latiendo.png_478486366.png" width="500" height="300" class="responsive"></h2>
         <h1 id="marco" style="font-size:300%;"></h1>
-       <!--  <p id="marco"> marocmarocmarocmaroc</p> -->
-    </div>
+    
+    </div> -->
 
 </body>
 </html>
