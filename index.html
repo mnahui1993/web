@@ -2,6 +2,11 @@
 <html>
 
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <meta charset="utf-8">
     <style type="text/css">
         div {
@@ -30,7 +35,13 @@
             margin: auto;
             visibility: hidden;
         }
-body{
+
+img{
+    width: 100%;
+  height: auto;
+}
+
+body {
     background-color: #353535 ;
 }
 
@@ -44,10 +55,13 @@ body{
     
     <div id="textInput"></div>
   
-    <div id="centrador">
-        <img id="imagen" src="conf.png">
-    </div>
-    
+
+    <div id="fotos" style="visibility: hidden;">
+<a data-fancybox="gallery" ><img src="conf.png"></a>
+<a data-fancybox="gallery" ><img src="conf.png"></a>
+<a data-fancybox="gallery" ><img src="conf.png"></a>
+</div>
+
 </body>
 
 <script>
@@ -69,7 +83,7 @@ body{
                 // Salimos del Timer y quitamos la barra baja (_)
                 clearInterval(timer);
                 cnt.innerHTML = cnt.innerHTML.substr(0, longitud);
-                document.getElementById("imagen").style.visibility = "visible";
+                document.getElementById("fotos").style.visibility ="visible";
 
                 return true;
             } else {
@@ -85,7 +99,7 @@ body{
 "Cada día que pasa te conozco un poquito mejor, y eso me da una satisfacción que no puedes imaginarte, porque siento que estamos llegando el uno al otro, mostrándonos tal y como somos. ¡Te amo! .";
 
     // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
-    machineWritter("textInput", texto, 80);
+    machineWritter("textInput", texto, 5);
 
 
 </script>
