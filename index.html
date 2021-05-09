@@ -9,93 +9,75 @@
 
     <meta charset="utf-8">
     <style type="text/css">
-        div {
-            color: white;
-            font-family: "Courier";
-            font-size: 40px;
-            font-weight: bold;
-            margin: 10px 0 0 10px;
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300);
 
-        }
-
-        #centrador {
-            position: relative;
-            width: 400px;
-            height: 400px;
-           
-        }
-
-        #imagen {
-            position: absolute;
-            width: 500px;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            visibility: hidden;
-        }
+body{
+  background:#ff6b6b;
+  color:white;
+  font-family: 'Lato', sans-serif;
+  font-weight:100;
+}
+h1{
+  font-size:4em;
+  text-align:center;
+  font-family:"lato";
+  font-weight:100;
+}
 
 img{
-    width: 100%;
-  height: auto;
+  width:250px;
+  margin:auto;
+  transition: all 0.2s;
+  display:block;
 }
-
-body {
-    background-color: #353535 ;
+#flower{
+  width:250px;
+  margin:auto;
 }
+#flower:hover{
+  opacity:0.15;
+  cursor:pointer;
+  transition: all 1s;
 
+}
+#hint{
+  text-align:center;
+  padding:25px;
+  margin:auto;
+}
+#container{
+  margin-top:auto;
+  margin-bottom:auto;
+}
+#hideaway{
+  display:none;
+  width:700px;
+  margin:auto;
+  text-align:left;
+  transition: all 1s;
+}
+a{
+  color:white;
+}
+a:link {
+  text-decoration:none;
+  color:whie;
+}
 
     </style>
 
 
 </head>
 
-<body>
-    
-    <div id="textInput"></div>
-  
-
-    <div id="fotos" style="visibility: hidden;">
-<a data-fancybox="gallery" ><img src="4CD82330-DAF7-4C18-87C2-C23DC16656F5.jpeg"></a>
-
+<div id='container'>
+<h1>Feliz dia de las Madres!</h1>
+  <h2>❤❤❤</h2>
+<div id='flower'>
+    <img id="im"align='middle' src='181ECC14-2CAD-45BF-9E8A-8CB0C87CF2C5.jpeg'/>
+   <h3>TE AMO MUCHO MI MOYOCHA ❤❤❤❤</h3>
+  </div>
 </div>
+<div id="hideaway">Dear Mom,</br>
 
-</body>
-
-<script>
-
-
-
-    function machineWritter(contenedor, texto, intervalo) {
-        // Calculamos la longitud del texto
-        longitud = texto.length;
-        // Obtenemos referencia del div donde se va a alojar el texto.
-        cnt = document.getElementById(contenedor);
-        var i = 0;
-        // Creamos el timer
-        timer = setInterval(function () {
-            // Vamos añadiendo letra por letra y la _ al final.
-            cnt.innerHTML = cnt.innerHTML.substr(0, cnt.innerHTML.length - 1) + texto.charAt(i) + "_";
-            // Si hemos llegado al final del texto..
-            if (i >= longitud) {
-                // Salimos del Timer y quitamos la barra baja (_)
-                clearInterval(timer);
-                cnt.innerHTML = cnt.innerHTML.substr(0, longitud);
-                document.getElementById("fotos").style.visibility ="visible";
-
-                return true;
-            } else {
-                // En caso contrario.. seguimos
-                i++;
-            }
-        }, intervalo);
-    };
-
-    var texto = "Mi amor ❤️, hoy cumplimos 5 meses de novios y yo me siento como el primer día😊😊😊, pero sin la parte del nerviosismo que sentía las primeras veces que te vi 😅. Lo que quiero decir, es que mi corazón ❤️te ama, y que mis sentimientos no han cambiado desde el día en que comenzamos a ser novios🥰🥰.Cada vez estamos más cerquita de hacer el medio año juntos, y yo me siento muy feliz 😊😊, porque a pesar de que pueda parecer que no es mucho tiempo, es el suficiente para tener las cosas más que claras con respecto a que es lo que quiero contigo, y que es lo que siento por ti 😍😍😍.Cada día que pasa te conozco un poquito mejor, y eso me da una satisfacción que no puedes imaginarte😘😘, porque siento que estamos llegando el uno al otro😍😍, mostrándonos tal y como somos 🤭🤭. ¡Te ❤️❤️ amo mucho ,no existe palabras para expresarte todo lo que siento por ti 😍😍😍😍 cariño mío 😘😘😘! .";
-
-    // 100 es el intervalo de minisegundos en el que se escribirá cada letra.
-    machineWritter("textInput", texto, 70);
-
-
-</script>
+<img id='sign' src='https://i.imgur.com/IrQ7xe3.png'>
+</div>
